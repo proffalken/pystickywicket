@@ -24,6 +24,7 @@ jobs:
         python -m pip install flake8
         # Install Poetry
         curl -sSL https://install.python-poetry.org | python3 -
+        # Install the poetry dependencies
         poetry install
     - name: Lint with flake8
       run: |
@@ -35,3 +36,7 @@ jobs:
       run: |
         # Use Poetry to build the packages
         poetry build
+    - name: Publish Packages
+      run: |
+        # Use Poetry to build the packages
+        poetry publish
