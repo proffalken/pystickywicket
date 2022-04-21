@@ -1,10 +1,11 @@
-name: Python package
+name: Publish Packages
 
 on:
-  pull_request:
+  merge:
+    branches: main
 
 jobs:
-  build:
+  publish:
 
     runs-on: ubuntu-latest
     strategy:
@@ -36,3 +37,7 @@ jobs:
       run: |
         # Use Poetry to build the packages
         poetry build
+    - name: Publish Packages
+      run: |
+        # Use Poetry to build the packages
+        poetry publish --username ${{ secrets.PYPI_USER }} --password ${{ secrets.PYPI_PASS }}
