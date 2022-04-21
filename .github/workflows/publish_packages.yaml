@@ -1,8 +1,9 @@
 name: Publish Packages
 
 on:
-  merge:
-    branches: main
+  push:
+    branches: 
+      - 'main'
 
 jobs:
   publish:
