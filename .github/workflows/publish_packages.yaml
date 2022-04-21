@@ -55,7 +55,3 @@ jobs:
         poetry publish --username ${{ secrets.PYPI_USER }} --password ${{ secrets.PYPI_PASS }}
 
         name: Publish Release
-    - name: Create a Release
-      uses: elgohr/Github-Release-Action@v4
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
