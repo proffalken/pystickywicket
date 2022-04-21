@@ -6,6 +6,9 @@ metadata:
   annotations:
     github.com/project-slug: proffalken/pyecb
     backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://play-cricket.ecb.co.uk/hc/en-us/sections/360000978518-API-Experienced-Developers-Only
+      title: ECB Play Cricket API Pages
 spec:
   type: library
   owner: matt@doics.co
