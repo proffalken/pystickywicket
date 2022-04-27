@@ -13,3 +13,7 @@ build:
       - poetry config virtualenvs.create false
     post_install:
       - poetry install
+
+mkdocs:
+  configuration: mkdocs.yml
+  fail_on_warning: false
