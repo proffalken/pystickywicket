@@ -1,9 +1,7 @@
 import pyecb
 
-def test_class_loads():
-    ecb = pyecb.ECB(
-            username="test",
-            api_key="test")
 
-    assert ecb.username == "test"
+def test_class_loads():
+    ecb = pyecb.ECB(api_key="test")
+
     assert ecb.api_key == "test"
