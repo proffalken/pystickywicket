@@ -45,14 +45,9 @@ jobs:
         tag: ${{ steps.tag_version.outputs.new_tag }}
         name: Release ${{ steps.tag_version.outputs.new_tag }}
         body: ${{ steps.tag_version.outputs.changelog }}
-    - name: Build Packages
+    - name: Build and Publish Packages
       run: |
         # Use Poetry to build the packages
         poetry version $(git describe --tags --abbrev=0)
         poetry build
-    - name: Publish Packages
-      run: |
-        # Use Poetry to build the packages
         poetry publish --username ${{ secrets.PYPI_USER }} --password ${{ secrets.PYPI_PASS }}
-
-        name: Publish Release
