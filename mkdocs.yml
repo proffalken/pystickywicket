@@ -1,1 +1,7 @@
 site_name: PyECB
+theme:
+  name: "material"
+
+plugins:
+  - search
+  - mkdocstrings
