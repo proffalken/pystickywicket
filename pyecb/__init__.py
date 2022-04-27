@@ -34,12 +34,12 @@ class ECB:
             api_name (str): The Name of the API (clubs, team, etc)
             **kwargs: Further arguments to be passed as a parameter
         """
-        url = f"{self.base_url}/{api_name}.json"
+        url = self.base_url + "/" + api_name + ".json"
         params = {"api_token": self.api_key}
         for k, v in kwargs.items():
             params.update({k: v})
         req = requests.get(url, params=params)
-        status = req.status
+        status = req.status_code
         if status == 200:
             data = req.json()
         else:
@@ -48,4 +48,5 @@ class ECB:
         return {"status": status, "data": data}
 
     def get_club_data(self, club_id=None):
-        self._get_api_content("clubs")
+        data = self._get_api_content("clubs")
+        return data
