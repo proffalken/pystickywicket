@@ -48,6 +48,7 @@ jobs:
     - name: Build Packages
       run: |
         # Use Poetry to build the packages
+        poetry version $(git describe --tags --abbrev=0)
         poetry build
     - name: Publish Packages
       run: |
