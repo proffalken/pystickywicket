@@ -48,6 +48,7 @@ jobs:
     - name: Build and Publish Packages
       run: |
         # Use Poetry to build the packages
+        git fetch -a
         poetry version $(git describe --tags --abbrev=0)
         poetry build
         poetry publish --username ${{ secrets.PYPI_USER }} --password ${{ secrets.PYPI_PASS }}
