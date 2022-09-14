@@ -1,3 +1,3 @@
-# ECB
+# Sticky Wicket
 
-::: pyecb
+::: pysickywicket

@@ -1,4 +1,4 @@
-from pyecb import __version__
+from pystickywicket import __version__
 
 
 def test_version():

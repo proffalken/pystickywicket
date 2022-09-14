@@ -5,15 +5,15 @@ __version__ = '0.1.0'
 import requests
 
 
-class ECB:
+class StickyWicket:
 
     def __init__(
             self,
             api_key=None):
         """
-        ECB
+        StickyWicket
 
-        Create a new instance of the ECB API
+        Create a new instance of the StickyWicket API
 
         Args:
             api_key (str): The API Key for authentication
