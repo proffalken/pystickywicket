@@ -13,8 +13,8 @@ build:
       - poetry config virtualenvs.create false
     pre_build:
       - pip install mkdocs==1.3.0
-      - pip install mkdocs-material
-      - pip install mkdocstrings
+      - pip install mkdocs-material-extensions
+      - pip install mkdocstrings-python-legacy
     post_install:
       - poetry install
 
