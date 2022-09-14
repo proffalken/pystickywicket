@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "pyecb"
+name = "pystickywicket"
 version = "0.0.0"
-description = ""
+description = "A python library for interacting with the API provided by the national cricket board of England and Wales"
 authors = ["Matthew Macdonald-Wallace <matt@doics.co>"]
 
 [tool.poetry-dynamic-versioning]

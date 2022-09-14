@@ -1,5 +1,5 @@
-# Welcome to PyECB
+# Welcome to Sticky Wicket
 
-PyECB is a library to improve the ease with which you are able to interact with
-the ECB Play Cricket API.
+Sticky Wicket is a library to improve the ease with which you are able to interact with
+the API provided by the national cricket board of England and Wales.
 

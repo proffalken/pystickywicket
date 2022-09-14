@@ -1,14 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: PyECB
-  description: A Python library for communicating with the ECB API
+  name: Sticky Wicket
+  description: A Python library for communicating with the API provided by the national cricket board in England and Wales
   annotations:
-    github.com/project-slug: proffalken/pyecb
+    github.com/project-slug: proffalken/pystickywicket
     backstage.io/techdocs-ref: dir:.
   links:
     - url: https://play-cricket.ecb.co.uk/hc/en-us/sections/360000978518-API-Experienced-Developers-Only
-      title: ECB Play Cricket API Pages
+      title: API Documentation from the national cricket board in England and Wales
 spec:
   type: library
   owner: matt@doics.co
