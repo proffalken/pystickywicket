@@ -11,6 +11,8 @@ build:
       - asdf install poetry latest
       - asdf global poetry latest
       - poetry config virtualenvs.create false
+    pre-build:
+      - pip install mkdocs==1.3.0
     post_install:
       - poetry install
 
